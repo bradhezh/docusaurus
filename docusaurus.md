@@ -74,7 +74,10 @@ const config: Config = {
         },
       ],
     },
-    prism: ...,
+    prism: {
+       ...
++      additionalLanguages: ["csharp"],
+     },
     docs: { sidebar: { hideable: true } },
     tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
   } ...,
