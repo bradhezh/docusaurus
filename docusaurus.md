@@ -5,16 +5,16 @@ Docusaurus is a static-site generator, building single-page applications with Re
 ## Quick Start
 
 ```bash
-pnpm create docusaurus markdown-example classic --typescript
-cd markdown-example
+pnpm create docusaurus doc-demo classic --typescript
+cd doc-demo
 pnpm start
 
-gh repo create markdown-example --public
+gh repo create doc-demo --public
 git init
 git add .
 git commit -m "first commit"
 git branch -M master
-git remote add origin https://github.com/bradhezh/markdown-example.git
+git remote add origin https://github.com/bradhezh/doc-demo.git
 git push -u origin master
 ```
 
@@ -38,9 +38,9 @@ const config: Config = {
   tagline: "A comprehensive Markdown example using Docusaurus",
   ...
   url: "https://bradhezh.github.io",
-  baseUrl: "/markdown-example/",
+  baseUrl: "/doc-demo/",
   organizationName: "bradhezh",
-  projectName: "markdown-example",
+  projectName: "doc-demo",
   ...
   presets: [
     [
@@ -69,7 +69,7 @@ const config: Config = {
       }
       items: [
         {
-          href: "https://github.com/bradhezh/markdown-example",
+          href: "https://github.com/bradhezh/doc-demo",
           ...
         },
       ],
@@ -203,8 +203,8 @@ jobs:
 
 ```bash
 pnpm dlx docusaurus-docs-to-pdf \
-  --docs-url http://localhost:3000/markdown-example \
-  --pdf-path pdf/markdown-example.pdf \
+  --docs-url http://localhost:3000/doc-demo \
+  --pdf-path pdf/doc-demo.pdf \
   --css " \
     .docusaurus-toc-body * { font-family: 'Lucida Grande' } \
     .toc-title { visibility: hidden } \
