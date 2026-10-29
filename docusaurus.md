@@ -34,8 +34,8 @@ import remarkMath from "remark-math";
 import rehypeMathjax from "rehype-mathjax";
 ...
 const config: Config = {
-  title: "Markdown Example",
-  tagline: "A comprehensive Markdown example using Docusaurus",
+  title: "Docusaurus Demo",
+  tagline: "",
   ...
   url: "https://bradhezh.github.io",
   baseUrl: "/doc-demo/",
@@ -62,7 +62,7 @@ const config: Config = {
     image: ...,
     colorMode: ...,
     navbar: {
-      title: "Markdown Example",
+      title: "Docusaurus Demo",
       logo: {
         alt: "",
         ...
@@ -209,7 +209,7 @@ pnpm dlx docusaurus-docs-to-pdf \
     .docusaurus-toc-body * { font-family: 'Lucida Grande' } \
     .toc-title { visibility: hidden } \
     .toc-title::after { \
-      content: 'Markdown Example'; visibility: visible; \
+      content: 'Docusaurus Demo'; visibility: visible; \
       position: absolute; left: 0; top: 0; width: 100%; \
       padding-bottom: 4px; border-bottom: 4px solid #000; \
       font-size: 32px; font-weight: bold; color: #000 } \
