@@ -76,7 +76,7 @@ const config: Config = {
     },
     prism: {
        ...
-+      additionalLanguages: ["csharp"],
++      additionalLanguages: ["csharp", "toml"],
      },
     docs: { sidebar: { hideable: true } },
     tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
